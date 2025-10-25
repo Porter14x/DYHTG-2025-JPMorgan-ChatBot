@@ -23,21 +23,15 @@
 "The interest rate is AER (variable): 2.50% and Gross(variable): 2.47%.",
 "What do these terms mean? What is the difference between AER, gross, and variable?",
 "AER is the rate of interest you earn from us on any balance above £0. It's short for Annual Equivalent Rate and shows the interest rate for a year, taking into account any interest payments made to you during the year. The AER lets you compare the interest rates on accounts from different banks and building societies where interest may be calculated or paid at different frequencies.
-
 Gross interest is the rate used to calculate your monthly interest payments where no tax is deducted. UK bank interest is paid gross. The interest you receive is subject to taxation.
-
 Variable means the rate can change and go up or down.",
 "Does this mean you tax me before paying out my interest?",
 "No. We don't take off any tax before paying your interest – this is standard for UK banks. However, interest you earn on your Chase accounts is taxable in the UK. How much interest you can earn before paying tax depends on your income tax rate.
-
 As a UK taxpayer, you may qualify for the Personal Savings Allowance, which allows you to earn some interest without paying income tax. If you only pay the basic rate of income tax, you can earn £1,000 in interest tax-free.
-
 If you're a higher-rate taxpayer, you can earn up to £500 tax-free. Additional-rate taxpayers do not get a Personal Savings Allowance – this means any interest you earn will be taxed. You can find out more at gov.uk
-
 If you're a tax resident in another country, you might also need to pay tax on any interest you earn in that country.",
 "Okay. I think I understand. Can you tell me more about the round-up account?",
 "Sure. You can open a round-up account to save the spare change from your eligible card transactions to the nearest pound. We'll add the change to your round-up account, where you’ll earn interest. Just so you know, you can't pay into a round-up account any other way or spend from it directly.
-
 The current interest rate for our round-up accounts is AER(variable): 5.00% and Gross(variable): 4.89%.",
 "Which account is better then?",
 "No account is better than the other. It all depends on your needs. A round-up account is a great way to save money without having to think about it, while a Chase saver, or traditional savings account, is a fantastic account to have if you're saving for a specific goal.",
@@ -50,13 +44,7 @@ The current interest rate for our round-up accounts is AER(variable): 5.00% and 
 "What's the interest rate on a Chase credit card?",
 "If you're a new customer, the interest rate is 0% on purchases for up to 15 months (if you make your minimum repayments). Our credit cards don't have any annual fees or foreign exchange fees, so they could be ideal for your next big purchase or exciting adventure. For daily spening, we recommend a current account with a debit card instead.",
 "What do I need to open a credit card?",
-"To apply for a Chase credit card, you'll need to:
-
-have a Chase current account
-be free of bankruptcies, County Court Judgements (CCJs) and Individual Voluntary Agreements (IVAs) for the last 6 years
-pass our creditworthiness and affordability checks
-Just so you know
-Checking your eligibility won't impact your credit score. We'll ask a few questions and – although there's no guarantee you'll be eligible – we'll tell you if you can apply.",
+"To apply for a Chase credit card, you'll need to: have a Chase current account be free of bankruptcies, County Court Judgements (CCJs) and Individual Voluntary Agreements (IVAs) for the last 6 years pass our creditworthiness and affordability checks Just so you know Checking your eligibility won't impact your credit score. We'll ask a few questions and – although there's no guarantee you'll be eligible – we'll tell you if you can apply.",
 "What is the interest on a credit card?",
 "The interest rate on a credit card with a £1200 credit limit is 24.9% p.a. APR (variable).",
 "Is there anything else I should know about managing my money?",
