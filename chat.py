@@ -1,11 +1,14 @@
 """
 Chat.py is responsible for handling Chatbot conversation
 """
-
+from flask import Flask, request
+import json
 from chatterbot import ChatBot
 from chatterbot.trainers import ListTrainer, CsvFileTrainer
 
 import sanitiser as s
+
+app = Flask(__name__)
 
 chatbot = ChatBot('Chatty',
                   logic_adapters=[             
@@ -40,11 +43,22 @@ trainer.train(s.sanitise_txt("financialdata.txt"))
 
 trainercsv.train("jpmdata.csv")
 
-while True:
+"""while True:
 
     query = input("> ")
 
     if query in exit_conditions:
         break
     else:
-        print(f"Chatty: {chatbot.get_response(query)}")
+        print(f"Chatty: {chatbot.get_response(query)}")"""
+
+@app.route('/optimise', methods=["POST"])
+def query():
+    request_data = request.get_json()
+    query = request_data['query']
+
+    response = {response: chatbot.get_response(query)}
+    return json.dumps(response)
+
+if __name__=='__main__':
+    app.run(debug=True, host='0.0.0.0', port=5000)
