@@ -13,7 +13,15 @@ chatbot = ChatBot('Chatty',
             'import_path': 'chatterbot.logic.BestMatch',
             'default_response': 'I Am sorry, but I do not understand. I can answer questions about JPMorgans history,\n provided services, such as Asset & Wealth Management, Commercial & Investment Banking, and work on Technology\n and career oppurtunities',
             'maximum_similarity_threshold': 0.95
+        },
+        {
+            'import_path': 'chatterbot.logic.MathematicalEvaluation'
         }
+    ],
+        preprocessors=
+    [
+        'chatterbot.preprocessors.clean_whitespace',
+        'chatterbot.preprocessors.unescape_html'
     ])
 
 trainer = ListTrainer(chatbot)
