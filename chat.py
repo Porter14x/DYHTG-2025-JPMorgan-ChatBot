@@ -52,7 +52,7 @@ trainercsv.train("jpmdata.csv")
     else:
         print(f"Chatty: {chatbot.get_response(query)}")"""
 
-@app.route('/optimise', methods=["POST"])
+@app.route('/query', methods=["POST"])
 def query():
     request_data = request.get_json()
     query = request_data['query']
