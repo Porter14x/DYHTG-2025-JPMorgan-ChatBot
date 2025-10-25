@@ -11,7 +11,7 @@ chatbot = ChatBot('Chatty',
                   logic_adapters=[             
         {
             'import_path': 'chatterbot.logic.BestMatch',
-            'default_response': 'I am sorry, but I do not understand.',
+            'default_response': 'I Am sorry, but I do not understand. I can answer questions about JPMorgans history,\n provided services, such as Asset & Wealth Management, Commercial & Investment Banking, and work on Technology\n and career oppurtunities',
             'maximum_similarity_threshold': 0.95
         }
     ])
