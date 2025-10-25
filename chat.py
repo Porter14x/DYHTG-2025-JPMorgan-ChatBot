@@ -3,25 +3,34 @@ Chat.py is responsible for handling Chatbot conversation
 """
 
 from chatterbot import ChatBot
-from chatterbot.trainers import ListTrainer
+from chatterbot.trainers import ListTrainer, CsvFileTrainer
 
-# Create a new chat bot named Charlie
-chatbot = ChatBot('Charlie')
+import sanitiser as s
+
+chatbot = ChatBot('Chatty',
+                  logic_adapters=[             
+        {
+            'import_path': 'chatterbot.logic.BestMatch',
+            'default_response': 'I am sorry, but I do not understand.',
+            'maximum_similarity_threshold': 0.95
+        }
+    ])
 
 trainer = ListTrainer(chatbot)
+trainercsv = CsvFileTrainer(
+    chatbot,
+    field_map={
+        'persona': 0,
+        'text': 1,
+        'conversation': 2,
+    }
+)
 
 exit_conditions = (":q")
 
-trainer.train([
-    "Hi, can I help you?",
-    "Sure, I'd like to book a flight to Iceland.",
-    "Your flight has been booked."
-])
+trainer.train(s.sanitise_txt("financialdata.txt"))
 
-trainer.train([
-    "What is your name?",
-    "My name is Chatty!"
-])
+trainercsv.train("jpmdata.csv")
 
 while True:
 
