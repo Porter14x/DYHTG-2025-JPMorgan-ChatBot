@@ -1,3 +1,7 @@
+"""
+Chat.py is responsible for handling Chatbot conversation
+"""
+
 from chatterbot import ChatBot
 from chatterbot.trainers import ListTrainer
 
